@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Películas Favoritas</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .pelicula {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #2b2b2b;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .info img {
+      width: 50px;
+      height: 75px;
+      border-radius: 5px;
+    }
+    .titulo span:first-child {
+      font-weight: bold;
+    }
+    .duracion {
+      color: #bbb;
+      font-size: 0.9em;
+      min-width: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Mis Películas Favoritas</h1>
+  <ul>
+    <li class="pelicula">
+      <div class="info">
+        <img src="LLLAND.jpg"La La Land">
+        <div class="titulo">
+          <span>La La Land</span><br>
+          <span>Director: Damien Chazelle</span>
+        </div>
+      </div>
+      <div class="duracion">2h 8min</div>
+    </li>
+    <li class="pelicula">
+      <div class="info">
+        <img src="FSTRUN.jpg" alt="Forrest Gump">
+        <div class="titulo">
+          <span>Forrest Gump</span><br>
+          <span>Director: Robert Zemeckis</span>
+        </div>
+      </div>
+      <div class="duracion">2h 22min</div>
+    </li>
+    <li class="pelicula">
+      <div class="info">
+        <img src="IT.jpg" alt="El viaje de Chihiro">
+        <div class="titulo">
+          <span>IT</span><br>
+          <span>Director: Hayao Miyazaki</span>
+        </div>
+      </div>
+      <div class="duracion">2h 5min</div>
+    </li>
+    <li class="pelicula">
+      <div class="info">
+        <img src="PDR.jpg" alt="El Padrino">
+        <div class="titulo">
+          <span>El Padrino</span><br>
+          <span>Director: Francis Ford Coppola</span>
+        </div>
+      </div>
+      <div class="duracion">2h 55min</div>
+    </li>
+  </ul>
+
+</body>
+</html>
