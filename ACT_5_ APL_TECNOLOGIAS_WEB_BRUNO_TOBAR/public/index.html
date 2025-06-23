@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Tobar | Página de lista de tareas interactivas</title>
+
+    <!--Carga de librería Bootstrap css-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+    <!--Carga de librería jQuery-->
+    <script src="./lib/jquery/jquery.js"></script>
+
+    <!--Carga de estilo personalizado-->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+<body class="bg-light p-4">
+    <div class="container">
+        <h1 class="mb-4">Gestor de Tareas | Bruno Tobar</h1>
+
+        <div class="alert alert-success mensaje" style="display: none;">¡Tarea agregada con éxito!</div>
+
+        <div class="input-group mb-3">
+            <input type="text" id="nuevaTarea" class="form-control" placeholder="Escribe una tarea...">
+            <button id="agregar" class="btn btn-primary">Agregar</button>
+            <button id="vaciarLista" class="btn btn-danger">Vaciar Lista</button>
+        </div>
+
+        <ul id="listaTareas" class="list-group"></ul>
+    </div>
+
+    <!--Carga de librería Bootstrap js-->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Carga de funcionalidad-->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
