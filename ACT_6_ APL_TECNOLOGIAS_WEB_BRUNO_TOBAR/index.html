@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario HTML5 | Bruno Tobar</title>
+  <!-- Librería de Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow rounded">
+        <div class="card-header bg-primary text-white text-center">
+          <h3>Formulario de Datos</h3>
+        </div>
+        <div class="card-body">
+          <form action="server.php" method="POST" enctype="multipart/form-data">
+            <div class="row g-3">
+              <!-- Texto -->
+              <div class="col-md-6">
+                <label for="text" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="text" name="text" required>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+
+              <!-- URL -->
+              <div class="col-md-6">
+                <label for="url" class="form-label">Sitio web</label>
+                <input type="url" class="form-control" id="url" name="url">
+              </div>
+
+              <!-- Teléfono -->
+              <div class="col-md-6">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="tel" name="tel">
+              </div>
+
+              <!-- Edad -->
+              <div class="col-md-4">
+                <label for="number" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="number" name="number">
+              </div>
+
+              <!-- Rango de nivel de rendimiento académico -->
+              <div class="col-md-8">
+                <label for="range" class="form-label">Nivel de rendimiento académico  (0-100)</label>
+                <input type="range" class="form-range" id="range" name="range" min="0" max="100">
+              </div>
+
+              <!-- Color -->
+              <div class="col-md-4">
+                <label for="color" class="form-label">Color favorito</label>
+                <input type="color" class="form-control form-control-color" id="color" name="color">
+              </div>
+
+              <!-- Fecha, Hora, Semanas -->
+              <div class="col-md-4">
+                <label for="date" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="date" name="date">
+              </div>
+              <div class="col-md-4">
+                <label for="time" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="time" name="time">
+              </div>
+              <div class="col-md-6">
+                <label for="datetime" class="form-label">Fecha y hora local</label>
+                <input type="datetime-local" class="form-control" id="datetime" name="datetime">
+              </div>
+              <div class="col-md-3">
+                <label for="month" class="form-label">Mes</label>
+                <input type="month" class="form-control" id="month" name="month">
+              </div>
+              <div class="col-md-3">
+                <label for="week" class="form-label">Semana</label>
+                <input type="week" class="form-control" id="week" name="week">
+              </div>
+
+              <!-- Contraseña -->
+              <div class="col-md-6">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password">
+              </div>
+
+              <!-- Buscar -->
+              <div class="col-md-6">
+                <label for="search" class="form-label">Buscar</label>
+                <input type="search" class="form-control" id="search" name="search">
+              </div>
+
+              <!-- Archivo -->
+              <div class="col-md-12">
+                <label for="file" class="form-label">Subir archivo</label>
+                <input type="file" class="form-control" id="file" name="file">
+              </div>
+
+              <!-- Checkbox -->
+              <div class="col-md-12">
+                <label class="form-label">Semestres por aprobar:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="html" name="intereses[]" value="HTML">
+                  <label class="form-check-label" for="html">6to</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="css" name="intereses[]" value="CSS">
+                  <label class="form-check-label" for="css">7to</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="js" name="intereses[]" value="JavaScript">
+                  <label class="form-check-label" for="js">8to</label>
+                </div>
+              </div>
+
+              <!-- Seleccionar -->
+              <div class="col-md-12">
+                <label class="form-label">Género</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+                  <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="genero" id="femenino" value="Femenino">
+                  <label class="form-check-label" for="femenino">Femenino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="genero" id="otro" value="Otro">
+                  <label class="form-check-label" for="otro">Otro</label>
+                </div>
+              </div>
+
+              <!-- Oculto -->
+              <input type="hidden" name="token" value="Oculto desde la pagina de Bruno Tobar">
+
+              <!-- Select -->
+              <div class="col-md-6">
+                <label for="pais" class="form-label">País</label>
+                <select class="form-select" name="pais" id="pais">
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Perú">Perú</option>
+                  <option value="México">México</option>
+                </select>
+              </div>
+
+              <!-- Comentarios -->
+              <div class="col-md-12">
+                <label for="comentarios" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="comentarios" name="comentarios" rows="4"></textarea>
+              </div>
+
+              <!-- Botones -->
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success me-2">Enviar</button>
+                <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-muted text-center">
+          ATW | ACT 6 | FORMULARIO DE HTML | BRUNO TOBAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Librería de Bootstrap JS  -->
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
